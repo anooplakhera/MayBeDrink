@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpCompleteMsgActivity"
+    android:background="@drawable/thanks_back">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100sdp"
+        layout="@layout/view_back"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="@dimen/_20sdp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/_50sdp"
+            android:paddingBottom="@dimen/_50sdp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@drawable/msg_back">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Your account has\n been verified!"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_17ssp"
+                android:fontFamily="@font/roboto_bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:gravity="center"
+                android:text="Complete your profile"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_17ssp"
+                android:fontFamily="@font/roboto_bold"/>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_30sdp">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="@dimen/_30sdp"
+                android:paddingRight="@dimen/_30sdp"
+                android:text="Continue"
+                android:textSize="@dimen/_13ssp"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:fontFamily="@font/roboto"
+                android:background="@drawable/button_back1"
+                android:onClick="continueClick"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:paddingLeft="@dimen/_45sdp"
+                android:paddingRight="@dimen/_45sdp"
+                android:text="Skip"
+                android:textSize="@dimen/_13ssp"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:fontFamily="@font/roboto"
+                android:background="@drawable/button_back1"
+                android:onClick="skipClick"/>
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpPhoneActivity"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:background="@drawable/signup_back">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        layout="@layout/view_header_back"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/header_back"
+            android:alpha="0.7"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/_25sdp"
+            android:paddingRight="@dimen/_25sdp"
+            android:paddingBottom="@dimen/_100sdp"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="@dimen/_24sdp"
+                    android:layout_height="@dimen/_24sdp"
+                    android:src="@drawable/sex_icon"
+                    android:adjustViewBounds="true"
+                    android:tint="@color/iconColor"/>
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/lookingForSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:spinnerMode="dropdown"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_15ssp"
+                    android:fontFamily="@font/roboto"
+                    android:background="@drawable/spinner_back"/><!-- style="@style/Widget.AppCompat.Spinner.Underlined" -->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="@dimen/_24sdp"
+                    android:layout_height="@dimen/_24sdp"
+                    android:src="@drawable/telephone_icon"
+                    android:adjustViewBounds="true"
+                    android:tint="@color/iconColor"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:hint="Phone"
+                    android:textColorHint="@color/white"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_15ssp"
+                    android:fontFamily="@font/roboto"
+                    android:singleLine="true"
+                    android:inputType="numberSigned"
+                    android:backgroundTint="@color/white"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_40sdp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:button="@drawable/tick_icon"
+                    android:buttonTint="@color/iconColor"
+                    android:checked="true"
+                    android:text="I agree to the"
+                    android:textSize="@dimen/_15ssp"
+                    android:textColor="@color/forgotColor"
+                    android:fontFamily="@font/roboto"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:text="Terms &amp; Conditions"
+                    android:textSize="@dimen/_15ssp"
+                    android:textColor="@color/greenHighText"
+                    android:fontFamily="@font/roboto"/>
+            </LinearLayout>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_75sdp"
+                android:text="SUBMIT"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_19ssp"
+                android:textAllCaps="false"
+                android:fontFamily="@font/roboto"
+                android:background="@drawable/header_back"
+                android:onClick="submitClick"/>
+
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

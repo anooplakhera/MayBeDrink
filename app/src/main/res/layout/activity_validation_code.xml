@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ValidationCodeActivity"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:background="@drawable/validation_otp_back">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        layout="@layout/view_header_back"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/header_back"
+            android:alpha="0.7"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/_25sdp"
+            android:paddingRight="@dimen/_25sdp"
+            android:paddingTop="@dimen/_50sdp"
+            android:gravity="top"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="A validation has been sent to\n your email and phone"
+                android:textSize="@dimen/_15ssp"
+                android:textColor="@color/forgotColor"
+                android:fontFamily="@font/roboto"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_gravity="center_horizontal"
+                android:text="Code"
+                android:textSize="@dimen/_15ssp"
+                android:textColor="@color/forgotColor"
+                android:fontFamily="@font/roboto"/>
+
+            <com.mukesh.OtpView
+                android:id="@+id/otp_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_35sdp"
+                android:fontFamily="@font/roboto_medium"
+                android:inputType="number"
+                android:textColor="@color/white"
+                app:itemCount="4"
+                app:itemSpacing="@dimen/_10sdp"
+                app:itemWidth="@dimen/_45sdp"
+                app:lineColor="@color/forgotColor"
+                app:lineWidth="@dimen/_1sdp"
+                app:cursorColor="@color/white"
+                app:itemRadius="@dimen/_5sdp"
+                app:viewType="rectangle" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_35sdp"
+                android:text="SUBMIT"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_19ssp"
+                android:textAllCaps="false"
+                android:background="@drawable/header_back"
+                android:fontFamily="@font/roboto"
+                android:onClick="submitClick"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

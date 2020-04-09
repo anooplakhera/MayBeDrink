@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CompleteProfileStep1Activity"
+    android:background="@drawable/profilestep_back">
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        layout="@layout/view_header_back_title"/>
+    
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="75dp"
+            android:background="@drawable/profile_back"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:orientation="vertical">
+            <FrameLayout
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/circle_purple">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="136dp"
+                    android:layout_height="136dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/profile_sample"
+                    app:civ_border_color="@color/white"
+                    app:civ_border_width="1dp"/>
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="16dp"
+                    android:padding="7dp"
+                    android:layout_gravity="bottom|right"
+                    android:src="@drawable/add_icon"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/circle_purple"/>
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:src="@drawable/user_icon"
+                    android:adjustViewBounds="true"
+                    android:tint="@color/iconColor"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:hint="First name"
+                    android:textColorHint="@color/white"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/roboto"
+                    android:singleLine="true"
+                    android:inputType="text"
+                    android:backgroundTint="@color/white"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:src="@drawable/user_icon"
+                    android:adjustViewBounds="true"
+                    android:tint="@color/iconColor"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:hint="Last name"
+                    android:textColorHint="@color/white"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/roboto"
+                    android:singleLine="true"
+                    android:inputType="textCapSentences"
+                    android:backgroundTint="@color/white"/>
+            </LinearLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:layout_gravity="center_horizontal"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:text="Next"
+                android:textColor="@color/white"
+                android:textSize="19sp"
+                android:textAllCaps="false"
+                android:background="@drawable/button_back"
+                android:onClick="nextClick"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+    
+</LinearLayout>

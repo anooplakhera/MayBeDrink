@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <!--<solid android:color="@color/highlighted_color"/>&lt;!&ndash; highColor1 &ndash;&gt;-->
+    <gradient android:angle="45"
+        android:endColor="@color/highColor1"
+        android:startColor="@color/bottomTextColor"/>
+</shape>

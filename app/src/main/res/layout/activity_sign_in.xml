@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignInActivity"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:background="@drawable/login_back">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        layout="@layout/view_header"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/header_back"
+            android:alpha="0.7"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/_25sdp"
+            android:paddingRight="@dimen/_25sdp"
+            android:paddingBottom="@dimen/_50sdp"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="@dimen/_28sdp"
+                    android:layout_height="@dimen/_28sdp"
+                    android:src="@drawable/user_icon"
+                    android:adjustViewBounds="true"
+                    android:tint="@color/iconColor"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:hint="Username"
+                    android:textColorHint="@color/white"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_15ssp"
+                    android:fontFamily="@font/roboto"
+                    android:singleLine="true"
+                    android:inputType="text"
+                    android:backgroundTint="@color/white"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="@dimen/_28sdp"
+                    android:layout_height="@dimen/_28sdp"
+                    android:src="@drawable/password_icon"
+                    android:adjustViewBounds="true"
+                    android:tint="@color/iconColor"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:hint="Password"
+                    android:textColorHint="@color/white"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_15ssp"
+                    android:fontFamily="@font/roboto"
+                    android:singleLine="true"
+                    android:inputType="textPassword"
+                    android:backgroundTint="@color/white"/>
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_35sdp"
+                android:text="SIGN IN"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_19ssp"
+                android:textAllCaps="false"
+                android:fontFamily="@font/roboto"
+                android:background="@drawable/header_back"
+                android:onClick="signInClick"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:padding="@dimen/_5sdp"
+                android:text="Forgot Username/Password?"
+                android:textSize="@dimen/_13ssp"
+                android:textColor="@color/forgotColor"
+                android:clickable="true"
+                android:fontFamily="@font/roboto"
+                android:onClick="forgotClick"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:padding="@dimen/_5sdp"
+                android:text="Don't have an account?"
+                android:textSize="@dimen/_13ssp"
+                android:fontFamily="@font/roboto"
+                android:textColor="@color/iconColor"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:padding="@dimen/_5sdp"
+                android:text="SIGN UP HERE"
+                android:textSize="@dimen/_19ssp"
+                android:textColor="@color/white"
+                android:clickable="true"
+                android:fontFamily="@font/roboto"
+                android:onClick="signUpClick"/>
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

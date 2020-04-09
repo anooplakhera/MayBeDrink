@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#195666</color>
+    <color name="colorPrimaryDark">#24445A</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <color name="highlighted_color">#4C0433</color>
+    <color name="iconColor">#C049A5</color>
+    <color name="forgotColor">#E598D3</color>
+    <color name="white">#FFFFFF</color>
+    <color name="whiteLayer">#B5FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray_otp">#979797</color>
+    <color name="greenHighText">#03A096</color>
+    <color name="greenIcon">#04A096</color>
+
+    <color name="highColor1">#D9A00D6A</color>
+    <color name="highColor2">#D953638C</color>
+    <color name="blackTrans">#9C000000</color>
+    <color name="bottomTextColor">#E598D3</color>
+</resources>

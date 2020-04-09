@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MayBeDrink</string>
+
+    <string name="termConditionWithoutPP">I agree to the Terms &amp; Conditions</string>
+    <string name="termCondition">I agree to the Privacy Policy Terms &amp; Conditions</string>
+    <string name="hello_worldBlue"><![CDATA[<b><font color=#0000FF>Hello world!</font></b>]]></string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CompleteProfileStep3Activity"
+    android:background="@drawable/profilestep_back">
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        layout="@layout/view_header_back_title"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/profile_back"/>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:paddingTop="50dp"
+                android:paddingBottom="25dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:src="@drawable/political_icon"
+                        android:adjustViewBounds="true"
+                        android:tint="@color/iconColor"/>
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/politicalSpinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:spinnerMode="dropdown"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/roboto"
+                        android:background="@drawable/spinner_back"/><!-- style="@style/Widget.AppCompat.Spinner.Underlined" -->
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:src="@drawable/kid_icon"
+                        android:adjustViewBounds="true"
+                        android:tint="@color/iconColor"/>
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/kidSpinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:spinnerMode="dropdown"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/roboto"
+                        android:background="@drawable/spinner_back"/><!-- style="@style/Widget.AppCompat.Spinner.Underlined" -->
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:src="@drawable/kid_want_icon"
+                        android:adjustViewBounds="true"
+                        android:tint="@color/iconColor"/>
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/kidWantSpinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:spinnerMode="dropdown"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/roboto"
+                        android:background="@drawable/spinner_back"/><!-- style="@style/Widget.AppCompat.Spinner.Underlined" -->
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:src="@drawable/drink_icon"
+                        android:adjustViewBounds="true"
+                        android:tint="@color/iconColor"/>
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/drinkSpinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:spinnerMode="dropdown"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/roboto"
+                        android:background="@drawable/spinner_back"/><!-- style="@style/Widget.AppCompat.Spinner.Underlined" -->
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:src="@drawable/smoke_icon"
+                        android:adjustViewBounds="true"
+                        android:tint="@color/iconColor"/>
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/smokeSpinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:spinnerMode="dropdown"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/roboto"
+                        android:background="@drawable/spinner_back"/><!-- style="@style/Widget.AppCompat.Spinner.Underlined" -->
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:src="@drawable/drink_favorite_icon"
+                        android:adjustViewBounds="true"
+                        android:tint="@color/iconColor"/>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:hint="Favorite drinks"
+                        android:textColorHint="@color/white"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/roboto"
+                        android:singleLine="true"
+                        android:inputType="text"
+                        android:backgroundTint="@color/white"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:src="@drawable/me_icon"
+                        android:adjustViewBounds="true"
+                        android:tint="@color/iconColor"/>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:hint="Me in my own words"
+                        android:textColorHint="@color/white"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/roboto"
+                        android:singleLine="true"
+                        android:inputType="text"
+                        android:backgroundTint="@color/white"/>
+                </LinearLayout>
+
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="35dp"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingLeft="50dp"
+                    android:paddingRight="50dp"
+                    android:text="Save"
+                    android:textColor="@color/white"
+                    android:textSize="19sp"
+                    android:textAllCaps="false"
+                    android:background="@drawable/button_back"
+                    android:onClick="saveClick"/>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </FrameLayout>
+
+</LinearLayout>
